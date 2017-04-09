@@ -1,0 +1,29 @@
+---
+title: "chaos package"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+A package with functions to generate fractals. It is intended to be use for educational purposes.
+
+## Install
+
+To install `chaos`:
+
+```
+devtools::install_github("ddiez/chaos")
+```
+
+
+## Usage
+
+
+```{r}
+library(chaos)
+x <- logistic_map(rstep = 1e-2)
+plot(x, xlim = c(2, 4))
+```
+
