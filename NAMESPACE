@@ -2,3 +2,4 @@
 
 S3method(plot,logmap)
 export(logistic_map)
+importFrom(dplyr,bind_rows)

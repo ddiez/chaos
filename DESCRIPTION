@@ -5,6 +5,7 @@ Version: 0.1.0
 Authors@R: person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut", "cre"))
 Description: Educational package to show the behavior of some
     deterministic chaotic functions using shiny dynamic plots.
+Imports: dplyr
 License: MIT
 Encoding: UTF-8
 LazyData: true
