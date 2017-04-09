@@ -20,7 +20,7 @@ library(chaos)
     ## Loading required package: ggplot2
 
 ``` r
-x <- logistic_map(rstep = 1e-2)
+x <- logistic_map(rstep = 1e-3)
 plot(x, xlim = c(2, 4))
 ```
 
