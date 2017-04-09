@@ -6,6 +6,7 @@
 #' @aliases chaos
 #' @docType package
 #'
+#' @import ggplot2
 #' @importFrom dplyr bind_rows
 #'
 NULL
