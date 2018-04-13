@@ -4,10 +4,12 @@
 \alias{plot.logmap}
 \title{plot.logmap}
 \usage{
-\method{plot}{logmap}(x, size = 1, color = "black", xlim = c(0, 4))
+\method{plot}{logmap}(x, ..., size = 1, color = "black", xlim = c(0, 4))
 }
 \arguments{
 \item{x}{logmap object.}
+
+\item{...}{ignored.}
 
 \item{size}{point size.}
 
