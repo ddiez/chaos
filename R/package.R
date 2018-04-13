@@ -6,7 +6,9 @@
 #' @aliases chaos
 #' @docType package
 #'
-#' @import ggplot2
+#' @import ggplot2 tibble
 #' @importFrom dplyr bind_rows
+#' @useDynLib chaos
+#' @importFrom Rcpp sourceCpp
 #'
 NULL

@@ -14,13 +14,9 @@ To install `chaos`:
 
 ``` r
 library(chaos)
-```
-
-    ## Loading required package: ggplot2
-
-``` r
-x <- logistic_map(rstep = 1e-3)
-plot(x, xlim = c(2, 4)) + theme_void()
+library(ggplot2)
+x <- logmap(2, 4)
+plot(x) + theme_void()
 ```
 
 ![](README_files/figure-gfm/logmap-1.png)<!-- -->
