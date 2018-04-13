@@ -24,6 +24,6 @@ devtools::install_github("ddiez/chaos")
 ```{r logmap}
 library(chaos)
 x <- logistic_map(rstep = 1e-3)
-plot(x, xlim = c(2, 4))
+plot(x, xlim = c(2, 4)) + theme_void()
 ```
 

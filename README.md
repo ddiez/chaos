@@ -1,17 +1,16 @@
 chaos package
 ================
 
-A package with functions to generate fractals. It is intended to be use for educational purposes.
+A package with functions to generate fractals. It is intended to be use
+for educational purposes.
 
-Install
--------
+## Install
 
 To install `chaos`:
 
     devtools::install_github("ddiez/chaos")
 
-Usage
------
+## Usage
 
 ``` r
 library(chaos)
@@ -21,7 +20,7 @@ library(chaos)
 
 ``` r
 x <- logistic_map(rstep = 1e-3)
-plot(x, xlim = c(2, 4))
+plot(x, xlim = c(2, 4)) + theme_void()
 ```
 
-![](README_files/figure-markdown_github/logmap-1.png)
+![](README_files/figure-gfm/logmap-1.png)<!-- -->
