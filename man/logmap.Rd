@@ -11,9 +11,9 @@ logmap(r0 = 0, r1 = 4, length.out = 1000, maxit = 100)
 
 \item{r1}{final value for the r parameter.}
 
-\item{maxit}{maximum number of iterations returned per r value.}
+\item{length.out}{increment value for the r parameter.}
 
-\item{step}{increment value for the r parameter.}
+\item{maxit}{maximum number of iterations returned per r value.}
 }
 \description{
 logmap
