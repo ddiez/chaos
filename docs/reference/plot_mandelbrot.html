@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>plot.logmap — plot.logmap • chaos</title>
+<title>plot_mandelbrot — plot_mandelbrot • chaos</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="plot.logmap — plot.logmap" />
+<meta property="og:title" content="plot_mandelbrot — plot_mandelbrot" />
 
-<meta property="og:description" content="Plot a logistic map object." />
+<meta property="og:description" content="plot_mandelbrot" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -88,40 +88,27 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>plot.logmap</h1>
+    <h1>plot_mandelbrot</h1>
     
-    <div class="hidden name"><code>plot.logmap.Rd</code></div>
+    <div class="hidden name"><code>plot_mandelbrot.Rd</code></div>
     </div>
 
     
-    <p>Plot a logistic map object.</p>
+    <p>plot_mandelbrot</p>
     
 
-    <pre class="usage"><span class='co'># S3 method for logmap</span>
-<span class='fu'>plot</span>(<span class='no'>x</span>, <span class='no'>...</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>0</span>, <span class='fl'>4</span>))</pre>
+    <pre class="usage"><span class='fu'>plot_mandelbrot</span>(<span class='no'>x</span>, <span class='kw'>theme_void</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>logmap object.</p></td>
+      <td><p>mandelbrot set object.</p></td>
     </tr>
     <tr>
-      <th>...</th>
-      <td><p>ignored.</p></td>
-    </tr>
-    <tr>
-      <th>size</th>
-      <td><p>point size.</p></td>
-    </tr>
-    <tr>
-      <th>color</th>
-      <td><p>point color.</p></td>
-    </tr>
-    <tr>
-      <th>xlim</th>
-      <td><p>limits for x-axis.</p></td>
+      <th>theme_void</th>
+      <td><p>logical; whether to use theme_void (default: TRUE).</p></td>
     </tr>
     </table>
     

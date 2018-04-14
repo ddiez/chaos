@@ -71,11 +71,16 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
+<p>Plot the logitic map.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(chaos)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/logmap.html">logmap</a></span>(<span class="dv">2</span>, <span class="dv">4</span>)</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">plot</span>(x) <span class="op">+</span><span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme">theme_void</a></span>()</a></code></pre></div>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/logmap.html">logmap</a></span>()</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw"><a href="reference/plot_logmap.html">plot_logmap</a></span>(x)</a></code></pre></div>
 <p><img src="index_files/figure-html/logmap-1.png" width="700"></p>
+<p>Plot the mandelbrot set.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">z &lt;-<span class="st"> </span><span class="kw"><a href="reference/mandelbrot.html">mandelbrot</a></span>(<span class="dt">steps =</span> <span class="dv">300</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="reference/plot_mandelbrot.html">plot_mandelbrot</a></span>(z)</a></code></pre></div>
+<p><img src="index_files/figure-html/madelbrot-1.png" width="700"></p>
 </div>
   </div>
 

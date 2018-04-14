@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>logistic_map — logistic_map • chaos</title>
+<title>mandelbrot — mandelbrot • chaos</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="logistic_map — logistic_map" />
+<meta property="og:title" content="mandelbrot — mandelbrot" />
 
-<meta property="og:description" content="Create a logistic map with parameters." />
+<meta property="og:description" content="mandelbrot" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -88,46 +88,50 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>logistic_map</h1>
+    <h1>mandelbrot</h1>
     
-    <div class="hidden name"><code>logistic_map.Rd</code></div>
+    <div class="hidden name"><code>mandelbrot.Rd</code></div>
     </div>
 
     
-    <p>Create a logistic map with parameters.</p>
+    <p>mandelbrot</p>
     
 
-    <pre class="usage"><span class='fu'>logistic_map</span>(<span class='kw'>rmin</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>rmax</span> <span class='kw'>=</span> <span class='fl'>4</span>, <span class='kw'>rstep</span> <span class='kw'>=</span> <span class='fl'>0.1</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>1000</span>, <span class='kw'>x0</span> <span class='kw'>=</span> <span class='fu'>runif</span>(<span class='fl'>1</span>,
-  <span class='fl'>0</span>, <span class='fl'>1</span>))</pre>
+    <pre class="usage"><span class='fu'>mandelbrot</span>(<span class='kw'>x0</span> <span class='kw'>=</span> -<span class='fl'>2.5</span>, <span class='kw'>x1</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>y0</span> <span class='kw'>=</span> -<span class='fl'>1.5</span>, <span class='kw'>y1</span> <span class='kw'>=</span> <span class='fl'>1.5</span>, <span class='kw'>steps</span> <span class='kw'>=</span> <span class='fl'>100</span>,
+  <span class='kw'>maxit</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>tol</span> <span class='kw'>=</span> <span class='fl'>1e-06</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>rmin</th>
-      <td><p>min r.</p></td>
-    </tr>
-    <tr>
-      <th>rmax</th>
-      <td><p>max r.</p></td>
-    </tr>
-    <tr>
-      <th>rstep</th>
-      <td><p>r step.</p></td>
-    </tr>
-    <tr>
-      <th>n</th>
-      <td><p>number of iterations.</p></td>
-    </tr>
-    <tr>
       <th>x0</th>
-      <td><p>initial value.</p></td>
+      <td><p>starting point in real axis.</p></td>
+    </tr>
+    <tr>
+      <th>x1</th>
+      <td><p>end point in real axis.</p></td>
+    </tr>
+    <tr>
+      <th>y0</th>
+      <td><p>starting point in imaginary axis.</p></td>
+    </tr>
+    <tr>
+      <th>y1</th>
+      <td><p>end point in imaginary axis.</p></td>
+    </tr>
+    <tr>
+      <th>steps</th>
+      <td><p>number of points in range.</p></td>
+    </tr>
+    <tr>
+      <th>maxit</th>
+      <td><p>maximum number of iterations.</p></td>
+    </tr>
+    <tr>
+      <th>tol</th>
+      <td><p>tolerance.</p></td>
     </tr>
     </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>logmap object.</p>
     
 
   </div>
@@ -135,9 +139,7 @@
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-          </ul>
+                </ul>
 
   </div>
 </div>
