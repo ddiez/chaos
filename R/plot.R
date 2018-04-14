@@ -33,7 +33,7 @@ plot_logmap <- function(x, size = 1, color = "black", theme_void = TRUE) {
 #'
 #' @export
 plot_mandelbrot <- function(x, theme_void = TRUE) {
-  p <- ggplot(x, aes(real, imag, fill = iter)) +
+  p <- ggplot(x, aes_string("real", "imag", fill = "iter")) +
     geom_raster() +
     scale_x_continuous(expand = c(0, 0)) +
     scale_y_continuous(expand = c(0, 0)) +
