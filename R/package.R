@@ -6,7 +6,7 @@
 #' @aliases chaos
 #' @docType package
 #'
-#' @import ggplot2 tibble
+#' @import ggplot2 tibble dplyr viridis
 #' @importFrom dplyr bind_rows
 #' @useDynLib chaos
 #' @importFrom Rcpp sourceCpp

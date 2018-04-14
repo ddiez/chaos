@@ -20,11 +20,19 @@ devtools::install_github("ddiez/chaos")
 
 ## Usage
 
+Plot the logitic map.
 
 ```{r logmap}
 library(chaos)
 library(ggplot2)
 x <- logmap(2, 4)
 plot(x) + theme_void()
+```
+
+Plot the mandelbrot set.
+
+```{r madelbrot}
+z <- mandelbrot(steps = 300)
+plot_mandelbrot(z)
 ```
 

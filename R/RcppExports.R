@@ -5,3 +5,7 @@ iter_logmap_c <- function(r, maxit = 100L) {
     .Call('_chaos_iter_logmap_c', PACKAGE = 'chaos', r, maxit)
 }
 
+iter_mandelbrot_c <- function(c, maxit = 100L, tol = 1e-6) {
+    .Call('_chaos_iter_mandelbrot_c', PACKAGE = 'chaos', c, maxit, tol)
+}
+

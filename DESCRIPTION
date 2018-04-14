@@ -6,9 +6,10 @@ Authors@R: person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("au
 Description: Educational package to show the behavior of some
     deterministic chaotic functions using shiny dynamic plots.
 Imports: 
+    tibble,
     ggplot2,
     dplyr,
-    tibble,
+    viridis,
     Rcpp
 License: MIT + file LICENSE
 Encoding: UTF-8

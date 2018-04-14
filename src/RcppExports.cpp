@@ -17,9 +17,23 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// iter_mandelbrot_c
+int iter_mandelbrot_c(std::complex<double> c, int maxit, double tol);
+RcppExport SEXP _chaos_iter_mandelbrot_c(SEXP cSEXP, SEXP maxitSEXP, SEXP tolSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::complex<double> >::type c(cSEXP);
+    Rcpp::traits::input_parameter< int >::type maxit(maxitSEXP);
+    Rcpp::traits::input_parameter< double >::type tol(tolSEXP);
+    rcpp_result_gen = Rcpp::wrap(iter_mandelbrot_c(c, maxit, tol));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_chaos_iter_logmap_c", (DL_FUNC) &_chaos_iter_logmap_c, 2},
+    {"_chaos_iter_mandelbrot_c", (DL_FUNC) &_chaos_iter_mandelbrot_c, 3},
     {NULL, NULL, 0}
 };
 

@@ -20,3 +20,10 @@ plot(x) + theme_void()
 ```
 
 ![](README_files/figure-gfm/logmap-1.png)<!-- -->
+
+``` r
+z <- mandelbrot(steps = 300)
+plot_mandelbrot(z)
+```
+
+![](README_files/figure-gfm/madelbrot-1.png)<!-- -->

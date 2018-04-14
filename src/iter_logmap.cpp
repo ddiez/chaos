@@ -1,8 +1,8 @@
-#include <vector>
 #include <Rcpp.h>
+#include <vector>
 
-using namespace std;
 using namespace Rcpp;
+using namespace std;
 
 // [[Rcpp::export]]
 NumericVector iter_logmap_c(double r, int maxit = 100) {
@@ -24,4 +24,3 @@ NumericVector iter_logmap_c(double r, int maxit = 100) {
   }
   return unique(y);
 }
-

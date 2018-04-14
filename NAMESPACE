@@ -2,8 +2,12 @@
 
 S3method(plot,logmap)
 export(logmap)
+export(mandelbrot)
+export(plot_mandelbrot)
+import(dplyr)
 import(ggplot2)
 import(tibble)
+import(viridis)
 importFrom(Rcpp,sourceCpp)
 importFrom(dplyr,bind_rows)
 useDynLib(chaos)
