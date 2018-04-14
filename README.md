@@ -12,14 +12,18 @@ To install `chaos`:
 
 ## Usage
 
+Plot the logitic map.
+
 ``` r
 library(chaos)
-library(ggplot2)
-x <- logmap(2, 4)
-plot(x) + theme_void()
+
+x <- logmap()
+plot_logmap(x)
 ```
 
 ![](README_files/figure-gfm/logmap-1.png)<!-- -->
+
+Plot the mandelbrot set.
 
 ``` r
 z <- mandelbrot(steps = 300)

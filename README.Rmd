@@ -24,9 +24,9 @@ Plot the logitic map.
 
 ```{r logmap}
 library(chaos)
-library(ggplot2)
-x <- logmap(2, 4)
-plot(x) + theme_void()
+
+x <- logmap()
+plot_logmap(x)
 ```
 
 Plot the mandelbrot set.
