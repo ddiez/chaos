@@ -7,6 +7,7 @@ Description: Educational package to show the behavior of some
     deterministic chaotic functions using shiny dynamic plots.
 Imports: 
     tibble,
+    parallel,
     ggplot2,
     dplyr,
     viridis,

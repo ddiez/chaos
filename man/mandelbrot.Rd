@@ -5,7 +5,7 @@
 \title{mandelbrot}
 \usage{
 mandelbrot(x0 = -2.5, x1 = 1, y0 = -1.5, y1 = 1.5, steps = 100,
-  maxit = 100, tol = 1e-06)
+  maxit = 100, tol = 1e-06, mc.cores = parallel::detectCores())
 }
 \arguments{
 \item{x0}{starting point in real axis.}
@@ -21,6 +21,8 @@ mandelbrot(x0 = -2.5, x1 = 1, y0 = -1.5, y1 = 1.5, steps = 100,
 \item{maxit}{maximum number of iterations.}
 
 \item{tol}{tolerance.}
+
+\item{mc.cores}{number of cores for parallel processing.}
 }
 \description{
 mandelbrot
