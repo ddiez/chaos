@@ -11,7 +11,7 @@
 #'
 #' @export
 mandelbrot <- function(x0 = -2.5, x1 = 1, y0 = -1.5, y1 = 1.5, steps = 100, maxit = 100, tol = 1e-6, mc.cores = parallel::detectCores()) {
-  if (Sys.info()["sysname"] == "windows") mc.cores = 1L
+  if (Sys.info()["sysname"] == "Windows") mc.cores = 1L
 
   x <- seq(x0, x1, length.out = steps)
   y <- seq(y0, y1, length.out = steps)
